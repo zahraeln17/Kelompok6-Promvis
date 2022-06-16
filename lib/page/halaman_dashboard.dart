@@ -2,6 +2,8 @@
 import 'package:fl_chart/fl_chart.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_aplikasiupi/shared/themes.dart';
+import 'package:flutter_aplikasiupi/shared/widget/appbar_custom.dart';
 import 'package:get/get.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
