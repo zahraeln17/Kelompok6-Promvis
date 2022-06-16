@@ -3,12 +3,14 @@
 import 'package:flutter_aplikasiupi/page/halaman_dashboard.dart';
 import 'package:flutter_aplikasiupi/route/app_pages.dart';
 import 'package:flutter_aplikasiupi/route/app_routes.dart';
+import 'package:flutter_aplikasiupi/page/kegiatan_kampus_page.dart';
 import 'package:get/get.dart';
 import '../page/halaman_navigasi.dart';
 
 class AppPages {
   static const DASHBOARD = Routes.DASHBOARD;
   static const NAVIGATION = Routes.NAVIGATION;
+  static const KEGIATAN_KAMPUS = Routes.KEGIATAN_KAMPUS;
 
   static final list = [
     GetPage(
@@ -19,5 +21,9 @@ class AppPages {
       name: Routes.NAVIGATION,
       page: () => NavigationPage(),
     ),
+    GetPage(
+      name: Routes.KEGIATAN_KAMPUS,
+      page: () => KegiatanKampusPage(),
+    ), // GetPage
   ];
 }
