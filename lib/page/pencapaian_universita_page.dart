@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/shared/themes.dart';
-import 'package:flutter_application_1/shared/widget/appbar_custom.dart';
+import 'package:flutter_aplikasiupi/shared/themes.dart';
+import 'package:flutter_aplikasiupi/shared/widget/appbar_custom.dart';
 import 'package:get/get.dart';
 
 class PencapaianUniversitasPage extends StatelessWidget {
