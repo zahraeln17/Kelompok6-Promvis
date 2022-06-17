@@ -46,12 +46,12 @@ class NavigationPage extends StatelessWidget {
       child: Column(
         children: [
           Image.asset(
-            "flutter_aplikasiupi/assets/images/Vector.png",
+            "assets/images/Vector.png",
             width: 120,
             height: 120,
           ),
           SizedBox(
-            height: 30,
+            height: 10,
           ),
           Text(
             'Martha Smith',
@@ -82,34 +82,34 @@ class NavigationPage extends StatelessWidget {
             kWhiteColor,
             redTextStyle.copyWith(fontSize: 18, fontWeight: bold),
           ),
-          // navigationItem(
-          //   "Kegiatan Universitas",
-          //   "assets/images/Vector-3.png",
-          //   () => Get.toNamed(AppPages.KEGIATAN_KAMPUS),
-          //   kRedColor,
-          //   whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
-          // ),
-          // navigationItem(
-          //   "Pencapaian Universitas",
-          //   "assets/images/Vector-4.png",
-          //   () => Get.toNamed(AppPages.PENCAPAIAN_UNIVERSITAS),
-          //   kWhiteColor,
-          //   redTextStyle.copyWith(fontSize: 18, fontWeight: bold),
-          // ),
-          // navigationItem(
-          //   "Dosen & Mahasiswa",
-          //   "assets/images/Vector-5.png",
-          //   () => Get.toNamed(AppPages.DATA_DOSEN_MAHASISWA),
-          //   kRedColor,
-          //   whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
-          // ),
-          // navigationItem(
-          //   "Sarana & Prasarana",
-          //   "assets/images/Vector-6.png",
-          //   () => Get.toNamed(AppPages.DATA_SARANA_PRASARANA),
-          //   kWhiteColor,
-          //   redTextStyle.copyWith(fontSize: 18, fontWeight: bold),
-          // ),
+          navigationItem(
+            "Kegiatan Universitas",
+            "assets/images/Vector-3.png",
+            () => Get.toNamed(AppPages.KEGIATAN_KAMPUS),
+            kRedColor,
+            whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+          ),
+          navigationItem(
+            "Pencapaian Universitas",
+            "assets/images/Vector-4.png",
+            () => Get.toNamed(AppPages.PENCAPAIAN_UNIVERSITAS),
+            kWhiteColor,
+            redTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+          ),
+          navigationItem(
+            "Dosen & Mahasiswa",
+            "assets/images/Vector-5.png",
+            () => Get.toNamed(AppPages.DATA_DOSEN_MAHASISWA),
+            kRedColor,
+            whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+          ),
+          navigationItem(
+            "Sarana & Prasarana",
+            "assets/images/Vector-6.png",
+            () => Get.toNamed(AppPages.DATA_SARANA_PRASARANA),
+            kWhiteColor,
+            redTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+          ),
         ],
       ),
     );
@@ -146,9 +146,9 @@ class NavigationPage extends StatelessWidget {
 
   Widget buttonLogout() {
     return GestureDetector(
-      // onTap: () {
-      //   Get.toNamed(AppPages.LOGIN);
-      // },
+      onTap: () {
+        Get.toNamed(AppPages.LOGIN);
+      },
       child: Container(
         margin: EdgeInsets.only(top: 20),
         padding: EdgeInsets.symmetric(horizontal: 20),
