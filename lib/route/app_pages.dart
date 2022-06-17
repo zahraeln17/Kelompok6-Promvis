@@ -9,6 +9,8 @@ import 'package:flutter_aplikasiupi/page/halaman_data_dosen_mahasiswa.dart';
 import 'package:flutter_aplikasiupi/page/halaman_pencapaian_universitas.dart';
 import 'package:get/get.dart';
 import '../page/halaman_navigasi.dart';
+import 'package:flutter_aplikasiupi/page/login_page.dart';
+import 'package:flutter_aplikasiupi/page/halaman_data_sarana_prasarana.dart';
 
 class AppPages {
   static const DASHBOARD = Routes.DASHBOARD;
@@ -16,6 +18,8 @@ class AppPages {
   static const KEGIATAN_KAMPUS = Routes.KEGIATAN_KAMPUS;
   static const DATA_DOSEN_MAHASISWA = Routes.DATA_DOSEN_MAHASISWA;
   static const PENCAPAIAN_UNIVERSITAS = Routes.PENCAPAIAN_UNIVERSITAS;
+  static const DATA_SARANA_PRASARANA = Routes.DATA_SARANA_PRASARANA;
+  static const LOGIN = Routes.LOGIN;
 
   static final list = [
     GetPage(
@@ -36,5 +40,11 @@ class AppPages {
     GetPage(
         name: Routes.PENCAPAIAN_UNIVERSITAS,
         page: () => PencapaianUniversitasPage()),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => Login()),
+    GetPage(
+      name: Routes.DATA_SARANA_PRASARANA,
+      page: () => DataSaranaPrasaranaPage()),
   ];
 }
