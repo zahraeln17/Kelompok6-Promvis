@@ -157,5 +157,119 @@ class KegiatanKampusPage extends StatelessWidget {
     );
   }
 
-  
+Widget infoPenelitian() {
+    return Container(
+      margin: EdgeInsets.only(top: 20),
+      width: Get.width,
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+          color: kDeepBlue, borderRadius: BorderRadius.circular(10)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          //
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/Vector-10.png',
+                width: 60,
+                height: 60,
+                fit: BoxFit.fill,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                'INFORMASI\nPENELITIAN',
+                style: whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          //PEMBATAS
+          Container(
+            margin: EdgeInsets.only(top: 20, bottom: 10),
+            width: Get.width,
+            height: 5,
+            color: kGreyColor,
+          ),
+          //TABLE
+          Container(
+            margin: EdgeInsets.only(top: 20),
+            child: Column(
+              children: [
+                Table(
+                  border: TableBorder.all(),
+                  columnWidths: const <int, TableColumnWidth>{
+                    0: FlexColumnWidth(2),
+                    1: FlexColumnWidth(4),
+                  },
+                  defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                  children: <TableRow>[
+                    TableRow(
+                      decoration: BoxDecoration(
+                        color: kRedColor,
+                      ),
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'TGL.PENELITAN',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: bold, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'HASIL PENELITIAN',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: bold, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                    rowPenelitian("30/3/2022", "Penelitian LMS SPADA UPI"),
+                    rowPenelitian("30/3/2020", "Geliat Radikalisme di Sekolah Menengah Atas"),
+                    rowPenelitian("30/3/2019", "Ruralisasi & Kriminalitas Di Masa Pancemi Covid-19"),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  rowPenelitian(
+    String tanggal,
+    String hasilPenelitian,
+  ) {
+    return TableRow(
+      decoration: BoxDecoration(color: kWhiteColor),
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            tanggal,
+            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 13),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            hasilPenelitian,
+            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 13),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ],
+    );
+  }  
 }
