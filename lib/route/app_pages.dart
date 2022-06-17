@@ -3,7 +3,8 @@
 import 'package:flutter_aplikasiupi/page/halaman_dashboard.dart';
 import 'package:flutter_aplikasiupi/route/app_pages.dart';
 import 'package:flutter_aplikasiupi/route/app_routes.dart';
-import 'package:flutter_aplikasiupi/page/kegiatan_kampus_page.dart';
+import 'package:flutter_aplikasiupi/page/halaman_kegiatan_kampus.dart';
+import 'package:flutter_aplikasiupi/page/halaman_data_dosen_mahasiswa.dart';
 import 'package:get/get.dart';
 import '../page/halaman_navigasi.dart';
 
@@ -25,5 +26,8 @@ class AppPages {
       name: Routes.KEGIATAN_KAMPUS,
       page: () => KegiatanKampusPage(),
     ), // GetPage
+    GetPage(
+        name: Routes.DATA_DOSEN_MAHASISWA,
+        page: () => DataDosenMahasiswaPage()),
   ];
 }
