@@ -374,3 +374,49 @@ Widget dataDosen() {
       ],
     );
   }
+
+ rowPendidikanDosen(
+    String d3,
+    String s1,
+    String s2,
+    String s3,
+  ) {
+    return TableRow(
+      decoration: BoxDecoration(color: kWhiteColor),
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            d3,
+            style: blackTextStyle.copyWith(fontSize: 20, fontWeight: bold),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            s1,
+            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            s2,
+            style: blackTextStyle.copyWith(fontSize: 20, fontWeight: bold),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            s3,
+            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ],
+    );
+  }
+}
