@@ -436,40 +436,6 @@ class _DashboardPageState extends State<DashboardPage> {
     );
   }
 
-  ///Chart Statistic
-  Widget chartsStatistic() {
-    return Container(
-      margin: EdgeInsets.only(top: 50),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            '1212',
-            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-          Text(
-            'Statistikasd',
-            style: blackTextStyle.copyWith(fontWeight: light, fontSize: 12),
-            textAlign: TextAlign.center,
-          ),
-          Stack(
-            children: <Widget>[
-              AspectRatio(
-                aspectRatio: 2,
-                child: Container(
-                  child: LineChart(
-                    mainData(),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
   Widget bottomTitleWidgets(double value, TitleMeta meta) {
     const style = TextStyle(
       color: Colors.white,

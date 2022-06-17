@@ -46,7 +46,7 @@ class NavigationPage extends StatelessWidget {
       child: Column(
         children: [
           Image.asset(
-            "assets/images/Vector.png",
+            "flutter_aplikasiupi/assets/images/Vector.png",
             width: 120,
             height: 120,
           ),
