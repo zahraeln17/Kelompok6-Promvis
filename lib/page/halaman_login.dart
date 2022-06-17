@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_aplikasiupi/route/app_pages.dart';
 import 'package:flutter_aplikasiupi/shared/themes.dart';
 import 'package:flutter_aplikasiupi/shared/widget/appbar_custom.dart';
+import 'package:get/get.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -123,29 +125,21 @@ class _LoginState extends State<Login> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 10),
-                    Align(
-                      alignment: Alignment.topRight,
-                      child: Text(
-                        'Forgot Password',
-                        style: TextStyle(color: Colors.white),
-                      ),
-                    ),
-                    SizedBox(height: 30),
                     Container(
-                      padding: EdgeInsets.all(26),
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: kRedColor,
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Sign In',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ),
+                        alignment: Alignment.center,
+                        height: 50,
+                        padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                              primary: Color(0xffF05454),
+                              textStyle: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold)),
+                          child: const Text('Login',
+                              style: TextStyle(color: Color(0xff000000))),
+                          onPressed: () {
+                            Get.toNamed(AppPages.DASHBOARD);
+                          },
+                        )),
                   ],
                 ),
               ),
