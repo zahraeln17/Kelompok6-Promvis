@@ -46,7 +46,7 @@ class _DashboardPageState extends State<DashboardPage> {
         children: [
           //Image Profile
           Image.asset(
-            'assets/images/Vector-3.png',
+            'assets/images/Vector.png',
             width: 90,
             height: 90,
           ),
@@ -381,8 +381,16 @@ class _DashboardPageState extends State<DashboardPage> {
                       ),
                     ],
                   ),
-                  rowPrestasi("1", "Top Global Zilong", "Global", "mantap"),
-                  rowPrestasi("2", "Top Lokal Miya", "Lokal", "mantap")
+                  rowPrestasi(
+                      "1",
+                      "The 2nd International Conference on ASEAN Affinity: People Prosperity Preservation 2015 (Aan Agustan)",
+                      "International",
+                      "Panelist Presenter"),
+                  rowPrestasi(
+                      "2",
+                      "Gemastik 2015: Multimedia (Ahmad Banyu 1303465 and Teti Suryati 1305889)",
+                      "National",
+                      "3rd Place")
                 ],
               )),
         ],

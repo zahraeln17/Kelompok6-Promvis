@@ -51,7 +51,7 @@ class _LoginState extends State<Login> {
                       height: 10,
                     ),
                     Text(
-                      'Teks',
+                      'Universitas Pendidikan Indonesia',
                       style:
                           TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                     ),
