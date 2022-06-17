@@ -59,7 +59,7 @@ class _DashboardPageState extends State<DashboardPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Marta apaxs",
+                  "Promvis",
                   style:
                       blackTextStyle.copyWith(fontSize: 14, fontWeight: bold),
                 ),
@@ -69,7 +69,7 @@ class _DashboardPageState extends State<DashboardPage> {
                       blackTextStyle.copyWith(fontSize: 14, fontWeight: bold),
                 ),
                 Text(
-                  "Kepala Departemen Pendidikan Ilmu Komputer",
+                  "Kelompok 6",
                   style:
                       blackTextStyle.copyWith(fontSize: 14, fontWeight: bold),
                 ),

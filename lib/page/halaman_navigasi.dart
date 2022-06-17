@@ -54,14 +54,14 @@ class NavigationPage extends StatelessWidget {
             height: 10,
           ),
           Text(
-            'Martha Smith',
+            'Promvis',
             style: whiteTextStyle.copyWith(fontWeight: bold, fontSize: 20),
           ),
           SizedBox(
             height: 5,
           ),
           Text(
-            'martha19',
+            'Kelompok 6',
             style: whiteTextStyle.copyWith(fontSize: 15, fontWeight: light),
           ),
         ],
