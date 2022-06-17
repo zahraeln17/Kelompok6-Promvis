@@ -46,7 +46,7 @@ class _DashboardPageState extends State<DashboardPage> {
         children: [
           //Image Profile
           Image.asset(
-            'assets/images/Vector.png',
+            'assets/images/Vector-3.png',
             width: 90,
             height: 90,
           ),
