@@ -311,3 +311,39 @@ Widget dataDosen() {
       ),
     );
   }
+
+  rowMahasiswa(
+    String mhsAktif,
+    String mhsNonAktif,
+    String mhsLulus,
+  ) {
+    return TableRow(
+      decoration: BoxDecoration(color: kWhiteColor),
+      children: <Widget>[
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            mhsAktif,
+            style: blackTextStyle.copyWith(fontSize: 20, fontWeight: bold),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            mhsNonAktif,
+            style: redTextStyle.copyWith(fontWeight: bold, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.all(10),
+          child: Text(
+            mhsLulus,
+            style: blackTextStyle.copyWith(fontWeight: bold, fontSize: 20),
+            textAlign: TextAlign.center,
+          ),
+        ),
+      ],
+    );
+  }
