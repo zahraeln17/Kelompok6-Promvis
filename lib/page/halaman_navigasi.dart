@@ -51,7 +51,7 @@ class NavigationPage extends StatelessWidget {
             height: 120,
           ),
           SizedBox(
-            height: 10,
+            height: 30,
           ),
           Text(
             'Martha Smith',
