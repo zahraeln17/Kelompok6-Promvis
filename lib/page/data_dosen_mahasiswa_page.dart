@@ -157,4 +157,157 @@ class DataDosenMahasiswaPage extends StatelessWidget {
     );
   }
 
-// lanjut widget data dosen nanti pagi
+Widget dataDosen() {
+    return Container(
+      margin: EdgeInsets.only(top: 40),
+      padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+      decoration: BoxDecoration(color: kDeepBlue),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          //
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'assets/images/Vector-8.png',
+                width: 50,
+                height: 50,
+                fit: BoxFit.fill,
+              ),
+              SizedBox(
+                width: 10,
+              ),
+              Text(
+                'DATA \nDOSEN',
+                style: whiteTextStyle.copyWith(fontSize: 18, fontWeight: bold),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+          //PEMBATAS
+          Container(
+            margin: EdgeInsets.only(top: 20, bottom: 10),
+            width: 250,
+            height: 5,
+            color: kGreyColor,
+          ),
+          //TABLE JUMLAH
+          Container(
+            width: Get.width * 0.7,
+            margin: EdgeInsets.only(top: 20),
+            child: Column(
+              children: [
+                Table(
+                  border: TableBorder.symmetric(
+                      outside: BorderSide(width: 1), inside: BorderSide.none),
+                  columnWidths: const <int, TableColumnWidth>{
+                    0: FlexColumnWidth(3),
+                    1: FlexColumnWidth(3),
+                  },
+                  defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                  children: <TableRow>[
+                    TableRow(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: kBlackColor, width: 1),
+                        color: kRedColor,
+                      ),
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'DOSEN AKTIF',
+                            style: blackTextStyle.copyWith(
+                                fontSize: 12, fontWeight: bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'DOSEN NON-AKTIF',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: bold, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                    rowDosen("500", "20"),
+                  ],
+                ),
+              ],
+            ),
+          ),
+          //TABLE PENDIDIKAN
+          Container(
+            width: Get.width * 0.7,
+            margin: EdgeInsets.only(top: 20),
+            child: Column(
+              children: [
+                Table(
+                  border: TableBorder.symmetric(
+                      outside: BorderSide(width: 1), inside: BorderSide.none),
+                  columnWidths: const <int, TableColumnWidth>{
+                    0: FlexColumnWidth(3),
+                    1: FlexColumnWidth(3),
+                    2: FlexColumnWidth(3),
+                    3: FlexColumnWidth(3),
+                  },
+                  defaultVerticalAlignment: TableCellVerticalAlignment.middle,
+                  children: <TableRow>[
+                    TableRow(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: kBlackColor, width: 1),
+                        color: kRedColor,
+                      ),
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'D3',
+                            style: blackTextStyle.copyWith(
+                                fontSize: 12, fontWeight: bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'S1',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: bold, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'S2',
+                            style: blackTextStyle.copyWith(
+                                fontSize: 12, fontWeight: bold),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.all(10),
+                          child: Text(
+                            'S3',
+                            style: blackTextStyle.copyWith(
+                                fontWeight: bold, fontSize: 12),
+                            textAlign: TextAlign.center,
+                          ),
+                        ),
+                      ],
+                    ),
+                    rowPendidikanDosen("100", "150", "200", "70"),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
