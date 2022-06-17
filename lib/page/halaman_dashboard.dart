@@ -32,8 +32,7 @@ class _DashboardPageState extends State<DashboardPage> {
             profile(),
             tableKegiatan(),
             statistikBar(),
-            tablePrestasi(),
-            chartsStatistic()
+            tablePrestasi()
           ]),
     );
   }
